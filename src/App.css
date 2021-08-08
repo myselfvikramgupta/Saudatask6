@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+
+.main{
+  width:100%;
+  height:100%;
+  display:flex;
+ align-items:center;
+justify-content:space-between;
+}
+.Loding{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+}
+.user_info{
+  height:100%;
+  width:30%;
+  background:#fff;
+  border-radius:5px;
+  overflow-y:scroll;
+}
+.user_details{
+  height:100%;
+  padding:20px 50px;
+  width:70%;
+  display:flex;
+  overflow-y:scroll;
+
+
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+ul{
+  list-style:none;
+}
+.user_list .list{
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid #DFE3E8 ;
+  cursor:pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image{
+    width:50px;
+    height:50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image img{
+width:100%;
+height:100%;
+object-fit:scale-down;
+border-radius:50%;
+border:3px solid #C4CDD5;
+display:block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile_info{
+  margin-left:20px;
 }
+.profile_info p{
+  font-size:14px;
+  color:#454F5B;
+  letter-spacing:1px;
+  font-weight:500;
 
-.App-link {
-  color: #61dafb;
 }
+.profile_info span{
+  font-size:12px;
+  color:#637381;
+  letter-spacing:1px;
+  font-weight:400;
+  
+}
+.details_card{
+  width:50%;
+  height:100%;
+ 
+}
+.sayings_card{
+  width:50%;
+  height:100%; 
+  padding:0 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card{
+ width:100%;
+ border:1px solid #C4CDD5;
+ border-radius:10px;
+}
+.card_image{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:150px;
+}
+.user_image{
+      width:120px;
+      height:120px;
+}
+.user_image img{
+  
+   width:100%;
+   height:100%;
+   object-fit:scale-down;
+   border-radius:50%;
+   border:3px solid #C4CDD5;
+   display:block;
+}
+.user_detail ul li{
+  border-bottom:1px solid #C4CDD5;
+}
+.user_detail ul li:last-child {
+  border-bottom:none;
+}
+.details_wrap{
+  display:flex;
+  padding:10px 20px;
+  align-items:center;
+  justify-content:space-between;
+}
+.details_wrap span{
+ font-size:13px;
+ color:#637381;
+}
+.sayings_title h3{
+  letter-spacing:2px;
+  font-weight:600;
+  color:#637381;
+  text-align:center;
+  margin-bottom:20px;
+}
+.sayings{
+  padding:5px 10px;
+  background:#F4F6F8;
+  color:#637381;
+  font-size:13px;
+  margin-bottom:10px;
+  border-radius:3px;
+  border-left:3px solid rgb(57, 97, 170);
 }
