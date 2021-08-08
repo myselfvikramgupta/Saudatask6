@@ -3,7 +3,7 @@ function CardImage({singleData=[]}){
         <>
              <div className="card_image">
                       <div className="user_image">
-                          <img src={singleData.images ? singleData.images.main : "https://picsum.photos/200"} />
+                          <img src={singleData.images ? singleData.images.main : "https://picsum.photos/200"} alt="User Image" />
                       </div>
                  </div>
         </>

@@ -11,7 +11,7 @@ function UserList({dataList=[],setSingleData}){
                 <li key={list.id} className="list" onClick={()=>setSingleData(list)}>
                   <div className="profile_img">
                  <div className="image">
-                    <img src={list.images ? list.images.main : "https://picsum.photos/200"} />
+                    <img src={list.images ? list.images.main : "https://picsum.photos/200"} alt="Profile Image" />
                   </div>
                   </div>
                   <div className="profile_info">
